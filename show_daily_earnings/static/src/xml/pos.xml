@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+    <t t-name="DailyEarnings">
+        <div class="oe_status daily_earning">
+
+        </div>
+    </t>
+
+</templates>
