@@ -1,6 +1,6 @@
 .. |company| replace:: YOUNGCUT
 
-.. |icon| image:: https://github.com/youngcut/odoo/blob/12.0/show_price/static/description/icon.png
+.. |icon| image:: https://github.com/youngcut/odoo/blob/12.0/show_price/static/description/icon.png?raw=1
 
 Sort by bestsellers
 ===================

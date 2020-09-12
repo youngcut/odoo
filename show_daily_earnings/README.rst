@@ -1,9 +1,9 @@
 .. |company| replace:: YOUNGCUT
 
 
-.. |icon| image:: https://github.com/youngcut/odoo/blob/12.0/show_daily_earnings/static/description/icon.png
+.. |icon| image:: https://github.com/youngcut/odoo/blob/12.0/show_daily_earnings/static/description/icon.png?raw=1
 
-.. image:: https://github.com/youngcut/odoo/blob/12.0/show_daily_earnings/static/description/screenshot_daily.png
+.. image:: https://github.com/youngcut/odoo/blob/12.0/show_daily_earnings/static/description/screenshot_daily.png?raw=1
    :alt: Show Daily Earnings
 
 

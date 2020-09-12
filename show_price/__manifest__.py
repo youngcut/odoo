@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "show_price",
+    'name': "Show Purchase Price in POS",
 
     'summary': """
         Shows purchase price on product""",
@@ -24,6 +24,9 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
+    ],
+    "images": [
+        'static/description/screenshot_sale.jpg'
     ],
     'qweb': [
         'static/src/xml/pos.xml'

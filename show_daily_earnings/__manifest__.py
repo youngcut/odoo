@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "show_daily_earnings",
+    'name': "Show Daily Earnings",
 
     'summary': """
         Shows daily earning at the right corner of point of sales.""",
@@ -24,6 +24,9 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
+    ],
+    "images": [
+        'static/description/screenshot_daily.png'
     ],
     'qweb': [
         'static/src/xml/pos.xml'
