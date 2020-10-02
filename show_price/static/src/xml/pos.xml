@@ -5,7 +5,7 @@
 	<t t-extend="Product">
 		<t t-jquery=".price-tag" t-operation="append">
 			<span t-if="product.standard_price" class="purchase-price-tag">
-				<t t-set="margin" t-value="product.list_price - product.standard_price"/>
+				<t t-set="margin" t-value="product.standard_price"/>
 				<t t-esc="widget.format_currency(margin)"/>
 			</span>
 		</t>
