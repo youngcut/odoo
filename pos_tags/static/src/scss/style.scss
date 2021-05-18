@@ -1,0 +1,25 @@
+
+.client-details-box.tab .client-detail {
+    > span.token:not(:last-child):after{content:", ";}
+}
+
+.token-autocomplete-container{
+    display: inline-flex; width: calc(100% - 166px); padding: 0px 4px; border-radius: 3px; border: solid 1px #cecbcb; flex-wrap: wrap; background-color: #FFFFFF;
+    .token-autocomplete-input {
+        color: black; font-size: 13px;  margin: 4px 2px;
+        flex: 1 1 auto; outline: none;
+        &:empty::before{content: attr(data-placeholder); color: rgba(0,0,0,0.6);}
+    }
+    .token-autocomplete-token {
+        font-size: 13px; background-color: #E6E6E6; margin: 4px 2px; border-radius: 32px; padding: 0px 8px; pointer-events: none;
+        &:hover { background-color:#c8c7c7 }
+        .token-autocomplete-token-delete{cursor: pointer; line-height: 16px;  pointer-events: auto; border-radius: 50%; display: inline-block; text-align: center;padding-left: 5px;}
+    }
+    .token-autocomplete-suggestions{
+        position: absolute; top: 34px; z-index: 100;display: none; list-style-type: none; padding: 0px; margin: 0px;font-size: 13px; background-color: #fff;
+        li{ padding: 5px 15px; cursor: pointer;}
+        li.token-autocomplete-suggestion-active{color: #747474; background-color: #fdfdfd;}
+        li.token-autocomplete-suggestion-highlighted{background-color: #6ec89b;color: #fff;}
+        li .token-autocomplete-suggestion-description{display:block; color: #808080;}
+    }
+}

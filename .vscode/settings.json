@@ -1,0 +1,11 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*",
+                "cmd": "ssh -t root@37.120.174.167 'service odoo12 restart'"
+            }
+        ]
+    },
+    "python.formatting.provider": "black"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<templates id="pos_tags_odoo_template" inherit_id="point_of_sale.template" xml:space="preserve">
+
+		<!-- ClientDetails -->
+		<t t-extend="ClientDetails">
+			<t t-jquery=".client-details-box" t-operation="after">
+				<div class="client-details-box tab clearfix"> 
+					<div class="client-detail">
+						<span class='label'>Tags</span>
+						<t t-foreach='partner.categories' t-as='cat'>
+							<t t-if='cat.assign'>
+								<span class="token" t-esc='cat.text'/>
+							</t>
+						</t>
+					</div>
+				</div>
+			</t>
+		</t>
+
+		<t t-extend="ClientDetailsEdit">
+			<t t-jquery=".client-details-box" t-operation="after">
+				<div class="client-details-box tab clearfix"> 
+					<div class="client-detail">
+						<span class='label'>Tags</span>
+						<div id="cat"></div>
+					</div>
+				</div>
+			</t>
+		</t>
+
+    </templates>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<templates id="pos_gi_odoo_template" inherit_id="point_of_sale.template" xml:space="preserve">
+
+		<!-- ClientDetails -->
+		<t t-extend="ClientDetails">
+			<t t-jquery=".client-details-box" t-operation="after">
+                <t t-if="partner.sales">
+                    <div class="client-history" style="padding: 20px 15px 0; max-height: 20vh; overflow-y: auto; clear: both;">
+                
+                        <table style="width:100%;font-size: 16px;">
+                            <tr>
+                                <th>Product</th>
+                                <th>Qty</th>
+                                <th>Date</th>
+                                <th>Price</th>
+                                <th>Origin</th>
+                            </tr>
+                                <t t-foreach="partner.sales" t-as="soid">
+                                    <tr>
+                                        <td t-esc="soid.name"></td>
+                                        <td t-esc="soid.qty"></td>
+                                        <td t-esc="soid.date"></td>
+                                        <td t-esc="widget.format_currency(soid.price)"></td>
+                                        <td t-esc="soid.origin"></td>
+                                    </tr>
+                                    
+                                </t>
+                        </table>
+                    </div>
+                </t>
+			</t>
+		</t> 
+    </templates>
