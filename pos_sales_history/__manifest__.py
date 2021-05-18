@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Pos Sales History",
+    'name': "POS Sales History",
 
     'summary': """
         See a quick overview of all products for each customer and where bought it (POS/Online).""",
@@ -27,5 +27,9 @@
     ],
     'qweb': [
         'static/src/xml/pos.xml'
-     ]
+    ],
+    "images": [
+        'static/description/screenshot.jpg'
+    ],
+    'license': "LGPL-3"
 }

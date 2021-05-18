@@ -25,10 +25,11 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
     ],
+    'qweb': [
+        'static/src/xml/pos.xml'
+     ],
     "images": [
         'static/description/screenshot_sale.jpg'
     ],
-    'qweb': [
-        'static/src/xml/pos.xml'
-     ]
+    'license': "LGPL-3"
 }

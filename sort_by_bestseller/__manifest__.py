@@ -13,5 +13,6 @@
     'depends': ['base', 'point_of_sale', 'sale'],
     'data': [
         'views/views.xml',
-    ]
+    ],
+    'license': "LGPL-3"
 }
