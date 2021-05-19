@@ -3,9 +3,7 @@
 <templates id="template" xml:space="preserve">
 
     <t t-name="DailyEarnings">
-        <div class="oe_status daily_earning">
-
-        </div>
+        <div class="oe_status daily_earning">0.00</div>
     </t>
 
 </templates>

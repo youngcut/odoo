@@ -14,15 +14,18 @@ odoo.define('show_daily_earnings.screen', function (require) {
 			$('.daily_earning').html(result.total_paid.toFixed(2));
 		});
 	}
-
+	var DailyEarnings = PosBaseWidget.extend({
+		template: 'DailyEarnings'
+	});
+	
 	chrome.Chrome.prototype.widgets.splice(1, 0, {
 		'name':   'daily_earnings',
-		'widget': PosBaseWidget.extend({template: 'DailyEarnings'}),
+		'widget': DailyEarnings,
 		'append':  '.pos-rightheader'
 	})
 
 	screens.PaymentScreenWidget.include({
-		order_changes: function () {
+		finalize_validation: function () {
 			this._super.apply(this, arguments);
 			set_daily_earnings();
 		},
