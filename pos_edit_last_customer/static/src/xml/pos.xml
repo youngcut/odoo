@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<templates id="pos_tags_odoo_template" inherit_id="point_of_sale.template" xml:space="preserve">
+	<templates id="pos_edit_last_customer_odoo_template" inherit_id="point_of_sale.template" xml:space="preserve">
 
 		<t t-name="EditLastPartner">
 			<div class="oe_status edit_last_partner">

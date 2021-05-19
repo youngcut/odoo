@@ -1,4 +1,4 @@
-odoo.define('postags.screen', function (require) {
+odoo.define('poseditlastcustomer.screen', function (require) {
     "use strict";
 
     var screens = require('point_of_sale.screens');
