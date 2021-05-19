@@ -86,7 +86,7 @@ odoo.define('postags.screen', function (require) {
             this.container.appendChild(this.hiddenSelect);
             this.select = new TokenAutocomplete.MultiSelect(this);
             this.autocomplete = new TokenAutocomplete.Autocomplete(this);
-            this.debug(true);
+            this.debug(false);
             var me = this;
             this.options.initialTokens.forEach(function (token) {
                 if (typeof token === 'object') {

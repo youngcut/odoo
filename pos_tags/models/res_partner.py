@@ -21,6 +21,8 @@ class ResPartner(models.Model):
     def create_from_ui(self, partner):
         partner_id = super(ResPartner, self).create_from_ui(partner)
 
-        self.browse(partner_id).write({'category_id': [(6, 0, [int(x) for x in partner['category_id'].split(',')])]})
+        cat_list = [] if not partner['category_id'] else [int(x) for x in partner['category_id'].split(',')]
+        
+        self.browse(partner_id).write({'category_id': [(6, 0, cat_list)]})
 
         return partner_id
