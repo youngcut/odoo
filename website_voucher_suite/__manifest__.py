@@ -18,5 +18,7 @@
 		'views/voucher_web.xml',
 		'views/views.xml'
 	],
+
+    'images': ['static/description/screenshot_frontend.png'],
 	'installable': True,
 }
