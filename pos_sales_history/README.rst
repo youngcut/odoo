@@ -1,8 +1,8 @@
 .. |company| replace:: YOUNGCUT
 
-.. |icon| image:: https://github.com/youngcut/odoo/blob/12.0/show_price/static/description/icon.png?raw=1
+.. |icon| image:: https://raw.githubusercontent.com/youngcut/odoo/12.0/website_voucher_suite/static/description/icon.png?raw=1
 
-.. image:: https://github.com/youngcut/odoo/blob/12.0/show_price/static/description/screenshot.jpg?raw=1
+.. image:: https://raw.githubusercontent.com/youngcut/odoo/12.0/website_voucher_suite/static/description/screenshot.jpg?raw=1
    :alt: Show Price
 
 POS Sales History
