@@ -7,7 +7,7 @@
         
     """,
     'author': "Youncut",
-    'website': "https://github.com/youngcut",
+    'website': "https://github.com/youngcut/odoo",
     'category': 'point_of_sale',
     'version': '1.0',
     'depends': ['base', 'point_of_sale', 'sale'],
