@@ -6,45 +6,45 @@
 
 <section class="oe_container">
     <div class="oe_row oe_spaced row">
-        <div class="text-justify oe_mt32 col-lg-12" style="max-width: 84%; margin: 16px 8%;">
+        <div class="text-justify oe_mt32 col-lg-12">
             <h3 class="oe_slogan">How to use</h3>
             <p>After installing the modul, you'il find the menu 'voucher' in the sales-module.</p>
             <p>There you have a list of all voucher you addet. You can also use import.</p>
-            <img class="img-responsive" src="screenshot_frontend.png" />
+            <img class="img-responsive" src="screenshot_list.png" />
         </div>
         <div class="oe_mt32 col-lg-12">
             <p>After creating a new voucher or clicking on an existing one, the following dialog appears:</p>
         </div>
-        <div class="col-lg-6">
-            <img class="img-responsive" src="screenshot_list.png" />
+        <div class="col-lg-12">
+            <img class="img-responsive" src="screenshot_voucher.png" />
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <ul class="text-left">
-                <li>Name: Displayed to the customer once they have added the voucher in the online store.</li>
-                <li>Voucher Product: A product that represents the voucher. The price is overwritten with that of the voucher.</li>
-                <li>Coupon-Code: By entering this code, the customer can add the voucher to the shopping cart. This is generated when the voucher is created, but can be edited.</li>
-                <li>Coupon Amount: The value of the voucher. Under 'Amount Type' you can select whether this value is a fixed amount or a percentage.</li>
-                <li>Minimal Amount: The voucher becomes valid only when the customer has reached this amount.</li>
-                <li>Maximum Amount: Only if percent is selected. This is the maximum amount of the voucher.</li>
-                <li>Product Valid: Only valid for selected products. If there is no such product in the shopping cart, these products will be suggested.</li>
-                <li>Customer: The voucher is only addable for these customers</li>
-                <li>Start Date/Expiry Date: During this time the voucher will be applicable</li>
-                <li>Apply limitation: Maximum availability of the voucher. This value decreases after each picking. -1 = Not available anymore.</li>
-                <li>Coupon History: All orders with this voucher are displayed here. Clicking on 'Release Voucher' will remove this voucher from all open orders.</li>
+                <li><strong>Name:</strong> Displayed to the customer once they have added the voucher in the online store.</li>
+                <li><strong>Voucher Product:</strong> A product that represents the voucher. The price is overwritten with that of the voucher.</li>
+                <li><strong>Coupon-Code:</strong> By entering this code, the customer can add the voucher to the shopping cart. This is generated when the voucher is created, but can be edited.</li>
+                <li><strong>Coupon Amount:</strong> The value of the voucher. Under 'Amount Type' you can select whether this value is a fixed amount or a percentage.</li>
+                <li><strong>Minimal Amount:</strong> The voucher becomes valid only when the customer has reached this amount.</li>
+                <li><strong>Maximum Amount:</strong> Only if percent is selected. This is the maximum amount of the voucher.</li>
+                <li><strong>Product Valid:</strong> Only valid for selected products. If there is no such product in the shopping cart, these products will be suggested.</li>
+                <li><strong>Customer:</strong> The voucher is only addable for these customers</li>
+                <li><strong>Start Date/Expiry Date:</strong> During this time the voucher will be applicable</li>
+                <li><strong>Apply limitation:</strong> Maximum availability of the voucher. This value decreases after each picking. -1 = Not available anymore.</li>
+                <li><strong>Coupon History:</strong> All orders with this voucher are displayed here. Clicking on 'Release Voucher' will remove this voucher from all open orders.</li>
             </ul>
 
         </div>
     </div>
     <div class="oe_row oe_spaced row">
-        <div class="text-justify oe_mt32 col-lg-12" style="max-width: 84%; margin: 16px 8%;">
+        <div class="text-justify oe_mt32 col-lg-12">
             <h3 class="oe_slogan">Frontend</h3>
 
             <p>The customer can enter the coupon code in the order completion. Depending on the availability of the voucher there are 3 scenarios:</p>
 
             <ul class="text-left">
-                <li>Will be rejected: Not active, code wrong, wrong customer, out of time-range.</li>
-                <li>Accepted but not discounted: Amount not reached, Wrong discount product (Valid products are displayed).</li>
-                <li>Accepted: Right Voucher value discounted, Amount higher than allowed (Max Amount discounted).</li>
+                <li><strong>Will be rejected:</strong> Not active, code wrong, wrong customer, out of time-range.</li>
+                <li><strong>Accepted but not discounted:</strong> Amount not reached, Wrong discount product (Valid products are displayed).</li>
+                <li><strong>Accepted:</strong> Right Voucher value discounted, Amount higher than allowed (Max Amount discounted).</li>
             </ul>
 
             <img class="img-responsive" src="screenshot_frontend.png" />
